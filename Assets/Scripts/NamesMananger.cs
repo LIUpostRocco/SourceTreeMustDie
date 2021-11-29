@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 
 public class NamesMananger : MonoBehaviour {
+	public string player1;
+	public string player2;
 	public string enemy1;
 	public string enemy2;
 	[Space]

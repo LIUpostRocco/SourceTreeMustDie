@@ -4,17 +4,14 @@ using UnityEngine;
 using TMPro;
 
 public class NamesMananger : MonoBehaviour {
-	public string player1;
-	public string player2;
-	public string enemy1;
-	public string enemy2;
+	public string[] names;
 	[Space]
 	public TextMeshProUGUI attackTText1;
 	public TextMeshProUGUI attackTText2;
 
 	private void Start() {
-		attackTText1.text = enemy1;
-		attackTText2.text = enemy2;
+		attackTText1.text = names[2];
+		attackTText2.text = names[3];
 	}
 }
 

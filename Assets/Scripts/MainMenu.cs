@@ -2,18 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour {
-	public void LoadScene(string which) {
-		SceneManager.LoadScene(which);
+	private string beginScene;
+	public GameObject fade;
+	public EventSystem es;
+
+	public void DoBegin() {
+		SceneManager.LoadScene(beginScene);
 	}
 
 	public void Begin(string which) {
-		Debug.Log("Do beginning things idk");
-		LoadScene(which);
+		beginScene = which;
+		fade.SetActive(true);
+		es.enabled = false;
+		Invoke("DoBegin", 1f);
 	}
 
 	public void Quit() {
+		Invoke("DoQuit", 1f);
+	}
+
+	private void DoQuit() {
 		#if UNITY_EDITOR
 		UnityEditor.EditorApplication.isPlaying = false;
 		#else

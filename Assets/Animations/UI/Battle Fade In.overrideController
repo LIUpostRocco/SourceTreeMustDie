@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Battle Fade In
+  m_Controller: {fileID: 9100000, guid: 2116c276c2c83524a846387b1143c4f7, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 587abecacf7c58a4f9c0c5a475dd37b8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9d748ad365547de48ac917c19769845a, type: 2}

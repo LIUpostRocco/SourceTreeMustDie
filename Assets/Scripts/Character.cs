@@ -5,7 +5,7 @@ using UnityEngine;
 public class Character : MonoBehaviour {
 	public Weapon weapon;
 	public int startHealth = 100;
-	private int health;
+	public int health;
 	public bool alive {
 		get {
 			if (health > 0 && isOut == false) {
@@ -19,9 +19,12 @@ public class Character : MonoBehaviour {
 	public bool doAnimator = true;
 	public bool isOut;
 
+	private void Awake() {
+		health = startHealth;
+	}
+
 	private void Start() {
 		anim = GetComponent<Animator>();
-		health = startHealth;
 	}
 
 	private void Update() {
@@ -49,9 +52,16 @@ public class Character : MonoBehaviour {
 		}
 	}
 
+	[ContextMenu("Revive")]
 	public void Revive() {
 		if (health <= 0) {
 			health = Mathf.RoundToInt(startHealth * 0.10f);
+		}
+	}
+
+	public void Heal(int amount) {
+		if (health > 0) {
+			health += amount;
 		}
 	}
 }

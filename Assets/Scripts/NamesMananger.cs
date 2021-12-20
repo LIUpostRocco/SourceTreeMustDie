@@ -9,7 +9,7 @@ public class NamesMananger : MonoBehaviour {
 	public TextMeshProUGUI attackTText1;
 	public TextMeshProUGUI attackTText2;
 
-	private void Start() {
+	public void Start() {
 		attackTText1.text = names[2];
 		attackTText2.text = names[3];
 	}

@@ -12,8 +12,7 @@ public class BattleOptionDisabler : MonoBehaviour {
 	private void Start() {
 		bm = GetComponent<BattleManager>();
 
-		CheckAtkButtons(2, atk1);
-		CheckAtkButtons(3, atk2);
+		CheckEnemyAtkButtons();
 
 		foreach (Character c in bm.chars) {
 			if (c.gameObject.activeInHierarchy == false) {
@@ -23,9 +22,16 @@ public class BattleOptionDisabler : MonoBehaviour {
 	}
 
 	public void CheckAtkButtons(int of, Button button) {
-		if (bm.chars[of].gameObject.activeInHierarchy == false || bm.chars[of].gameObject.activeInHierarchy == false) {
+		if (bm.chars[of].gameObject.activeInHierarchy == false || bm.chars[of].alive == false) {
 			button.interactable = false;
+		} else {
+			button.interactable = true;
 		}
+	}
+
+	public void CheckEnemyAtkButtons() {
+		CheckAtkButtons(2, atk1);
+		CheckAtkButtons(3, atk2);
 	}
 }
 

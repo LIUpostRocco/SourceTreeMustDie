@@ -33,6 +33,10 @@ public class Intro : MonoBehaviour {
 			nextTimer = 0f;
 			anim.SetTrigger("Next");
 		}
+
+		if (Input.GetButtonDown("Submit") == true) {
+			Finish();
+		}
 	}
 
 	public void Next() {

@@ -765,7 +765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.078431375, g: 0.07489322, b: 0.07489322, a: 1}
+  m_Color: {r: 0.078431375, g: 0.07489322, b: 0.07489322, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1013,9 +1013,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c574190c8a452904f99cb7216618c7b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a0442135caccf68459ee77f8e4791300, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1211,11 +1211,9 @@ MonoBehaviour:
     do anything in time!
   - He wanted us to rap, but my skills in the matter are second to none, and he probably
     would have killed us right there if he heard my bars.
-  - 'I''m just thankful that running around town for my rival toned my leg muscles...
-    b
-
-    ecause I was somehow able to get away.'
-  - I ran out the train station, down the street to Jackknife, and he knew exactly
+  - I'm just thankful that running around town for my rival toned my leg muscles...
+    because I was somehow able to get away.
+  - I ran out the train station, down the street to Jack Knife, and he knew exactly
     what to do.
   - I turn my head as the drops of sweat seemingly took years to fall down onto the
     concrete... but there he was... glaring at us...
@@ -1223,17 +1221,17 @@ MonoBehaviour:
     but he forgot one thing...
   - ...this is a turn based game assignment...
   art:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 8209470d676ad9d4f81e10ce13129ce0, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 8cc88caef1ad5a046ad8dc750e7b88a5, type: 3}
-  - {fileID: 0}
-  - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
-  - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 1e2fc9eab8c3001438620c218af18e7b, type: 3}
+  - {fileID: 21300000, guid: f66a281d93bb2da4499a4d431621718e, type: 3}
+  - {fileID: 21300000, guid: 0860cc3c8cdd236429722659c6edcf56, type: 3}
+  - {fileID: 21300000, guid: 547afb406617cc94ab017b687d3733bd, type: 3}
+  - {fileID: 21300000, guid: b7baa7835f31fa24ea3e8bf12cb5cfa2, type: 3}
+  - {fileID: 21300000, guid: a0442135caccf68459ee77f8e4791300, type: 3}
+  - {fileID: 21300000, guid: 9ccfb519b76f186478caaf927de298a3, type: 3}
+  - {fileID: 21300000, guid: a2fdb0f4406bc82409125aa8f7772e21, type: 3}
+  - {fileID: 21300000, guid: a3440c1c92529c34bb288c01d0a9d6b1, type: 3}
+  - {fileID: 21300000, guid: 922f1826e3bbb3148896a7396f030ccb, type: 3}
+  - {fileID: 21300000, guid: 60f2f2579564a8f42b7b635f4fbb0914, type: 3}
   vo:
   - {fileID: 8300000, guid: 5f8ddc6aa7dde8f4b9271303d9501cc6, type: 3}
   - {fileID: 8300000, guid: 060ac30c78ba8034988457d80de7037c, type: 3}

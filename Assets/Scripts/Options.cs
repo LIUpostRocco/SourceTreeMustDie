@@ -54,6 +54,14 @@ public class Options : MonoBehaviour {
 	public void UpdateSound(float value) {
 		UpdateVolume("soundV", value);
 	}
+
+	public void SetG(int to) {
+		QualitySettings.SetQualityLevel(to);
+	}
+
+	public void SetF(bool huh) {
+		Screen.fullScreen = huh;
+	}
 }
 
 // ~ Rocco Russo
